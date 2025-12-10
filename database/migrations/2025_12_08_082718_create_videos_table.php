@@ -12,9 +12,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description')->nullable();
-            $table->string('youtube_id');           // cuma ID, bukan full URL
+            $table->string('youtube_id');
             $table->string('thumbnail_url')->nullable();
-            $table->unsignedBigInteger('category_id')->nullable(); // tanpa foreign key dulu
+            $table->unsignedBigInteger('category_id')->nullable();
             $table->boolean('is_featured')->default(false);
             $table->timestamps();
         });
