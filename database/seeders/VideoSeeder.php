@@ -53,10 +53,10 @@ class VideoSeeder extends Seeder
             'is_featured'   => true,
         ]);
         Video::create([
-            'title'         => 'Classroom Of The Elite S3',
-            'description'   => 'GWEJH BANGET',
+            'title'         => 'MAKAN SOTO HARGA 6 RIBU SAMPAI JATOH GARA-GARA BANGKU PATAH',
+            'description'   => 'Jatoh',
             'youtube_id'    => '_oHCgMh9KGM',
-            'thumbnail_url' => '":"https://i.ytimg.com/vi/_oHCgMh9KGM/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=\u0026rs=AOn4CLCvnrehVr-9d3RDLOHAyoGYB77eiw',
+            'thumbnail_url' => 'https://i.ytimg.com/vi/_oHCgMh9KGM/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=\u0026rs=AOn4CLCvnrehVr-9d3RDLOHAyoGYB77eiw',
             'category_id'   => $foods?->id,
             'is_featured'   => true,
         ]);
