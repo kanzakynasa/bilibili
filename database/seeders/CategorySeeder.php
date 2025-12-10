@@ -12,16 +12,14 @@ class CategorySeeder extends Seeder
         $categories = [
             ['name' => 'Anime',  'slug' => 'anime'],
             ['name' => 'Movie',  'slug' => 'movie'],
-            ['name' => 'Series', 'slug' => 'series'],
+            ['name' => 'Berita', 'slug' => 'berita'],
         ];
 
-        foreach ($categories as $category) {
-            Category::create($category);
+        foreach ($categories as $cat) {
+            Category::firstOrCreate(
+                ['slug' => $cat['slug']],
+                $cat
+            );
         }
-        Category::create([
-            'name' => 'Default',
-            'slug' => 'default',
-        ]);
-
     }
 }
